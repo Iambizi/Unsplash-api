@@ -20,7 +20,7 @@ class App extends Component {
     // console.log(this.state.keywords);
     e.preventDefault();
     console.log(keyword);
-    const api_call = await fetch(`${CORS_URL}${BASE_URL}/search/photos?per_page=45&query=${keyword}&client_id=${API_ACCESS_KEY}`);
+    const api_call = await fetch(`${CORS_URL}${BASE_URL}/search/photos?per_page=30&query=${keyword}&client_id=${API_ACCESS_KEY}`);
     
     const data = await api_call.json();
     this.setState({ results: data.results });
