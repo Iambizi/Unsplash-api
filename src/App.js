@@ -11,22 +11,24 @@ const BASE_URL = "/https://api.unsplash.com";
 class App extends Component {
   state = {
     results: [],
-    keywords:""
+    keywords: ""
   };
 
   getPhoto = async e => {
     const keyword = e.target.elements.keyword.value;
-    this.setState({keywords: keyword });
+    this.setState({ keywords: keyword });
     // console.log(this.state.keywords);
     e.preventDefault();
-    console.log(keyword);
-    const api_call = await fetch(`${CORS_URL}${BASE_URL}/search/photos?per_page=30&query=${keyword}&client_id=${API_ACCESS_KEY}`);
-    
+    // console.log(keyword);
+    const api_call = await fetch(
+      `${CORS_URL}${BASE_URL}/search/photos?per_page=30&query=${keyword}&client_id=${API_ACCESS_KEY}`
+    );
+
     const data = await api_call.json();
     this.setState({ results: data.results });
-    // console.log(this.state.results);  
+    // console.log(this.state.results);
   };
-  
+
   render() {
     return (
       <React.Fragment>
@@ -35,7 +37,7 @@ class App extends Component {
             <h1 className="App-title">OnSnap</h1>
           </header>
           <Form getPhoto={this.getPhoto} />
-          <Photos results={this.state.results} keywords={this.state.keywords}/>
+          <Photos results={this.state.results} keywords={this.state.keywords} />
         </div>
       </React.Fragment>
     );

@@ -20,11 +20,11 @@ body {
   color: #4d4d4d;
 }
 
-.form-div{
+.form-div {
   height: 50px;
-  padding:0;
+  padding: 0;
 }
-#search-glass {  
+#search-glass {
   border: none;
   border-radius: 5px;
   height: 50px;
@@ -51,59 +51,72 @@ button {
 button:hover {
   cursor: pointer;
 }
-.container{
- margin-top: 20px;
- width: 100%;
- margin: 30px auto;
+.container {
+  margin-top: 20px;
+  width: 100%;
+  margin: 30px auto;
 }
-.photo-entry{
-  position:relative;
+.photo-entry {
+  position: relative;
   margin-bottom: 10px;
 }
-.photo{
+.photo {
   border-radius: 7px;
 }
-.photo:hover{
-  cursor:pointer;
+.photo:hover {
+  cursor: pointer;
 }
-.user{
-  position:absolute;
+.user {
+  position: absolute;
   border-radius: 50%;
   bottom: 9px;
   left: 39%;
 }
-.profile-photo{
-  border-radius:50%;
+.profile-photo {
+  border-radius: 50%;
   border: 2px #fff solid;
-  display:inline-block;
-  vertical-align:middle;
+  display: inline-block;
+  vertical-align: middle;
 }
-.username{
+.username {
   color: #fff;
-  display:inline-block;
-  vertical-align:middle;
+  display: inline-block;
+  vertical-align: middle;
   margin-left: 5px;
   font-weight: bold;
 }
-.heart{
-  height:1%;
-  width:1%;
-  fill:red;
+.download {
+  position: absolute;
+  bottom: 30px;
+  right: 40%;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  height: 3px;
+  width: 3px;
 }
-.likes{
-  position:absolute;
+.heart {
+  height: 1%;
+  width: 1%;
+  fill: red;
+}
+.likes {
+  position: absolute;
   top: 5px;
   left: 18%;
-  color:#fff;
+  color: #fff;
   font-weight: bold;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
-@media only screen and (max-width: 1280px){
-  .likes{
+@media only screen and (max-width: 1280px) {
+  .likes {
     left: 25%;
   }
-  .user{
+  .user {
     left: 35%;
+  }
+  .download {
+    right: 37%;
   }
 }
