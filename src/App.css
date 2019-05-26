@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+body {
+  background-color: #f0f0f0 !important;
+  overflow-x: hidden;
+}
+#root {
+  background-color: #f0f0f0 !important;
+  width: 100vw;
+  height: 100vh;
+}
+.App-header {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #4d4d4d;
+}
+
+/* unsplash magnifying glass */
+.form-div{
+  height: 50px;
+  padding:0;
+}
+#search-glass {  
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 50px;
+  background: #fff;
+}
+#search-glass svg {
+  height: 20px;
+  width: 20px;
+  color: #4d4d4d;
+}
+#search-glass:hover {
+  cursor: pointer;
+}
+#search-box {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  font-size: 15px;
+  height: 50px;
+  width: 40vw;
+}
+button {
+  height: 30px;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+.container{
+ margin-top: 20px;
+ /* border: 1px #4d4d4d solid; */
+ width: 100%;
+ margin: 30px auto;
+}
+.photo-grid{
+  display: grid;
+  justify-items:center;
+  grid-gap: 20px 20px;
+  grid-template-rows: 160px;
+}
+
+.photo{
+    /* align-items: center; */
+  grid-column: span 1;
+  grid-row: span 2;
+  border-radius: 5px;
+}
+ .photo:hover{
+   cursor:pointer;
+ }
