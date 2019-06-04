@@ -19,8 +19,7 @@ const Photos = props => {
                   </svg>
                   {results.likes}
                 </div>
-                <img
-                  className="photo"
+                <img className="photo"
                   src={results.urls.small}
                   alt={results.alt_description}
                 />
